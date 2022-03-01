@@ -1,0 +1,63 @@
+h1.heading {
+  font-weight: 800;
+  font-size: 14.1rem;
+  line-height: 10.1rem;
+  letter-spacing: -13.4568px;
+  color: #002f6d;
+
+  // @media only screen and (max-width: $tab-port) {
+  //   font-size: 7.5rem;
+  // }
+  // @media only screen and (max-width: $mbl-land) {
+  //   font-size: 6.1rem;
+  // }
+}
+h2.heading {
+  font-size: 7.9rem;
+  margin-bottom: 2rem;
+
+  // @media only screen and (max-width: $tab-port) {
+  //   font-size: 7.5rem;
+  // }
+  // @media only screen and (max-width: $mbl-land) {
+  //   font-size: 6.1rem;
+  // }
+}
+
+.text {
+  font-size: 2.1rem;
+  color: $color-primary;
+  font-weight: 900;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+@mixin img-size {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin icon-vector {
+  height: 2rem;
+  width: 2rem;
+}
+
+@mixin bg-img {
+  background-image: linear-gradient(
+      rgba(237, 240, 229, 0),
+      rgba(237, 240, 229, 0.151)
+    ),
+    url(../img/Vector-2.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

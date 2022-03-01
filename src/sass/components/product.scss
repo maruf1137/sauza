@@ -1,0 +1,32 @@
+.product-section {
+  padding: 8rem 0;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 14.3rem 0;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__img {
+    height: 90rem;
+    width: 64rem;
+
+    img {
+      @include img-size;
+    }
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 2rem;
+  }
+}
