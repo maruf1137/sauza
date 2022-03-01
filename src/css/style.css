@@ -7,7 +7,7 @@
   list-style: none;
   text-decoration: none;
   outline: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 html {
@@ -23,6 +23,7 @@ body {
   color: #002f6d;
   overflow-x: hidden;
   background-color: #f6f8f2;
+  text-transform: uppercase;
 }
 
 .main {
@@ -1022,6 +1023,7 @@ a:hover {
   min-width: 30rem;
   height: 6.3rem;
   width: 32rem;
+  color: #002f6d;
 }
 .btn img {
   height: 4.9rem;
@@ -1111,14 +1113,79 @@ a:hover {
 }
 .living__img {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 570px;
-  height: 492px;
+  bottom: 3rem;
+  right: 5rem;
+  width: 57rem;
+  height: 49rem;
 }
 .living__img img {
   height: 100%;
   width: 100%;
+}
+
+.buy-section {
+  padding: 8rem 0;
+}
+
+.buy h2 {
+  font-size: 10.5rem;
+}
+.buy .text {
+  font-size: 2.4rem;
+}
+.buy .btn {
+  margin: 0 auto 2rem auto;
+}
+.buy .btn-buy {
+  background-color: #002f6d;
+  color: #fff;
+}
+
+.footer-section {
+  padding: 8rem 0;
+  background-color: #002f6d;
+  position: relative;
+}
+
+.footer-border-1 {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  width: 100%;
+}
+
+.footer .text {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer .text span {
+  display: block;
+}
+.footer .text .text__col--1 {
+  color: #f6f6f6;
+  font-size: 1.2rem;
+}
+.footer .text .text__col--2 {
+  font-size: 1.8rem;
+  color: #edf0e5;
+}
+.footer__border-2 {
+  width: 213px;
+  height: 8.96px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem 0;
+}
+.footer__link {
+  font-size: 1.4rem;
+  color: #edf0e5;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.footer__link:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

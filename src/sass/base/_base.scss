@@ -7,7 +7,7 @@
   list-style: none;
   text-decoration: none;
   outline: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 html {
@@ -30,6 +30,7 @@ body {
   color: $color-primary;
   overflow-x: hidden;
   background-color: $color-bg;
+  text-transform: uppercase;
 }
 .main {
   background-color: #edf0e5;

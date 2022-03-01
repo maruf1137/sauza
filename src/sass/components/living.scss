@@ -47,10 +47,10 @@
 
   &__img {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 570px;
-    height: 492px;
+    bottom: 3rem;
+    right: 5rem;
+    width: 57rem;
+    height: 49rem;
 
     img {
       @include img-size;

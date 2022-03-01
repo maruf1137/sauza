@@ -1,0 +1,56 @@
+.footer-section {
+  padding: 8rem 0;
+  background-color: $color-primary;
+  position: relative;
+}
+
+.footer-border-1 {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  width: 100%;
+}
+
+.footer {
+  &__logo {
+  }
+
+  .text {
+    width: 80%;
+    margin: 0 auto;
+
+    span {
+      display: block;
+    }
+    .text__col--1 {
+      color: #f6f6f6;
+      font-size: 1.2rem;
+    }
+    .text__col--2 {
+      font-size: 1.8rem;
+      color: #edf0e5;
+    }
+  }
+
+  &__border-2 {
+    width: 213px;
+    height: 8.96px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem 0;
+  }
+
+  &__link {
+    font-size: 1.4rem;
+    color: #edf0e5;
+    opacity: 0.5;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
