@@ -985,6 +985,8 @@ a:hover {
   opacity: 0.5;
   transition: all 0.3s;
   text-transform: uppercase;
+  color: #002f6d;
+  font-family: "Avenir Next LT Pro", sans-serif;
 }
 .nav__link:hover {
   opacity: 1;
@@ -1046,6 +1048,7 @@ a:hover {
 .mobile-nav .close-nav {
   height: 4rem;
   width: 4rem;
+  cursor: pointer;
 }
 .mobile-nav .icon {
   height: 100%;
@@ -1100,6 +1103,7 @@ a:hover {
   top: 50%;
   right: 2rem;
   transform: translateY(-50%);
+  z-index: 2;
 }
 @media only screen and (max-width: 35.9375em) {
   .social {

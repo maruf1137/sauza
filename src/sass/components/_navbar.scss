@@ -31,6 +31,8 @@
     opacity: 0.5;
     transition: all 0.3s;
     text-transform: uppercase;
+    color: $color-primary;
+    font-family: $font-secondary;
 
     &:hover {
       opacity: 1;
@@ -91,6 +93,7 @@
   .close-nav {
     height: 4rem;
     width: 4rem;
+    cursor: pointer;
   }
 
   .icon {
@@ -152,6 +155,7 @@
   top: 50%;
   right: 2rem;
   transform: translateY(-50%);
+  z-index: 2;
 
   @media only screen and (max-width: $mbl-land) {
     display: none;
