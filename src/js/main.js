@@ -83,12 +83,3 @@ closeNav.addEventListener("click", closeMblNav);
 navLink.forEach((e) => {
   e.addEventListener("click", closeMblNav);
 });
-
-// create sticky
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= 100) {
-    nav.classList.add("sticky");
-  } else {
-    nav.classList.remove("sticky");
-  }
-});
