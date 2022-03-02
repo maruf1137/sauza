@@ -8,12 +8,20 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
-  gap: 4rem;
-  margin-top: 8rem;
+  margin-top: 12rem;
+
+  @media only screen and (max-width: $tab-land) {
+    display: none;
+  }
 
   &__img {
     width: 70rem;
     height: 70.3rem;
+
+    @media only screen and (max-width: 81.25em) {
+      width: 62rem;
+      height: 68.3rem;
+    }
 
     img {
       @include img-size;
@@ -21,6 +29,8 @@
   }
 
   &__content {
+    width: 66rem;
+    transform: translateX(-10rem);
   }
 
   &__btns {
@@ -43,5 +53,18 @@
   .btn {
   }
   h1.heading {
+  }
+}
+
+.header-mbl {
+  display: none;
+  @media only screen and (max-width: $tab-land) {
+    display: block;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5rem;
   }
 }

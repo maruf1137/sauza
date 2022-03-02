@@ -6,18 +6,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 8rem;
+    padding: 1.5rem 8rem;
     background-color: #f6f8f2;
     margin-top: 1.5rem;
+
+    @media only screen and (max-width: $mbl-port) {
+      padding: 1rem 3rem;
+    }
   }
 
   &__list {
     display: flex;
     align-items: center;
     gap: 0 5rem;
+
+    @media only screen and (max-width: $tab-land) {
+      display: none;
+    }
   }
   &__link {
-    color: #002f6d;
     font-size: 1.7rem;
     font-weight: 700;
     line-height: 1.3rem;
@@ -40,5 +47,133 @@
     img {
       @include img-size;
     }
+  }
+
+  .location-icon,
+  .bars-icon {
+    cursor: pointer;
+    display: none;
+    @media only screen and (max-width: $tab-land) {
+      display: block;
+    }
+
+    .icon {
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.082) 0px 3px 6px, rgba(0, 0, 0, 0.062) 0px 3px 6px;
+}
+
+.mobile-nav {
+  display: none;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: $color-primary;
+  transition: all 0.5s;
+
+  @media only screen and (max-width: $tab-land) {
+    display: block;
+  }
+
+  .close-nav {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .icon {
+    @include img-size;
+    fill: #fff;
+    opacity: 0.5;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.show-nav {
+  .mobile-nav {
+    transform: translateX(0);
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      padding-top: 30%;
+      align-items: center;
+      width: 100%;
+      gap: 6rem 0;
+    }
+
+    &__link {
+      color: #fff;
+      font-size: 4.2rem;
+      font-weight: 700;
+      line-height: 1.3rem;
+      opacity: 0.5;
+      transition: all 0.3s;
+      text-transform: uppercase;
+
+      @media only screen and (max-width: $mbl-land) {
+        font-size: 3.5rem;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .close-nav {
+      position: absolute;
+      top: 5rem;
+      right: 4rem;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.social {
+  position: fixed;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+
+  @media only screen and (max-width: $mbl-land) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem 0;
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-primary;
   }
 }

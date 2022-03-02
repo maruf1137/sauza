@@ -1,7 +1,4 @@
-// import product_1 from "../img/product-img-1.png";
-// import product_2 from "../img/product-img-2.png";
-// import product_3 from "../img/product-img-3.png";
-// import product_4 from "../img/product-img-4.png";
+// create products
 const product_1 = "img/product-img-4.png";
 
 const product = [
@@ -31,8 +28,9 @@ const productView = function () {
   const productParent = document.querySelector(".product");
   const markup = `
 
-  ${product.map(({ image, title, text }) => {
-    return `
+  ${product
+    .map(({ image, title, text }) => {
+      return `
       <div class="product__item">
               <figure class="product__img">
                 <img src="${image}" alt="" />
@@ -55,7 +53,8 @@ const productView = function () {
               </div>
             </div>
     `;
-  })}
+    })
+    .join("")}
             
   `;
   productParent.innerHTML = "";
@@ -63,3 +62,33 @@ const productView = function () {
 };
 
 productView();
+
+// show mobile nav
+
+const barsBtn = document.querySelector(".bars-icon");
+const closeNav = document.querySelector(".close-nav");
+const nav = document.querySelector(".nav");
+const navLink = document.querySelectorAll(".mobile-nav__link");
+
+const showMblNav = function () {
+  nav.classList.toggle("show-nav");
+};
+const closeMblNav = function () {
+  nav.classList.remove("show-nav");
+};
+
+barsBtn.addEventListener("click", showMblNav);
+closeNav.addEventListener("click", closeMblNav);
+
+navLink.forEach((e) => {
+  e.addEventListener("click", closeMblNav);
+});
+
+// create sticky
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 100) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+});

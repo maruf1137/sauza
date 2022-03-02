@@ -7,16 +7,42 @@
   flex-direction: column;
   gap: 14.3rem 0;
 
+  @media only screen and (max-width: $tab-land) {
+    gap: 8rem 0;
+  }
+
+  &__content {
+    @media only screen and (max-width: $tab-land) {
+      display: none;
+    }
+  }
+
   &__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 4rem;
+
+    @media only screen and (max-width: $tab-land) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 4rem 0;
+    }
   }
 
   &__img {
     height: 90rem;
     width: 64rem;
+
+    @media only screen and (max-width: $mbl-land) {
+      height: 70rem;
+      width: 90%;
+    }
+    @media only screen and (max-width: $mbl-small) {
+      height: 62rem;
+      width: 90%;
+    }
 
     img {
       @include img-size;
@@ -28,5 +54,9 @@
     flex-direction: column;
     gap: 1.6rem;
     margin-top: 2rem;
+
+    @media only screen and (max-width: $tab-land) {
+      align-items: center;
+    }
   }
 }

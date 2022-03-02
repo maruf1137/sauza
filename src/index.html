@@ -10,9 +10,41 @@
   </head>
   <body>
     <main class="main">
+      <!-- social icons -->
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <nav class="nav">
         <div class="nav__container">
-          <ul class="nav__list">
+          <div class="location-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#icon-location"></use>
+            </svg>
+          </div>
+          <ul class="nav__list first--col">
             <li class="nav__item">
               <a href="#" class="nav__link">OUR TEQUILAS</a>
             </li>
@@ -23,7 +55,7 @@
           <figure class="nav__logo">
             <img src="img/nav-logo.png" alt="logo" />
           </figure>
-          <ul class="nav__list">
+          <ul class="nav__list second--col">
             <li class="nav__item">
               <a href="#" class="nav__link">RECIPES</a>
             </li>
@@ -34,34 +66,99 @@
               <a href="#" class="nav__link">FIND SAUZA</a>
             </li>
           </ul>
+          <div class="bars-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#icon-bars"></use>
+            </svg>
+          </div>
+        </div>
+
+        <!-- mobile nav -->
+        <div class="mobile-nav">
+          <button class="close-nav">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">OUR TEQUILAS</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">OUR AGAVE COCKTAILS</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">recipes</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">about sauza</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">find sauza</a>
+            </li>
+          </ul>
         </div>
       </nav>
       <header class="header-section">
-        <div class="custom-container">
+        <div class="header">
+          <figure class="header__img">
+            <img src="img/hero.png" alt="" />
+          </figure>
+
+          <div class="header__content">
+            <p class="text">Sauza agave cocktails invites you to</p>
+            <h1 class="heading mb-2">Get Busy Living</h1>
+            <div class="header__btns btns mb-2">
+              <a href="#" class="btn">
+                <img src="img/Fill-1.png" alt="" />
+                <span>buy on drizly</span>
+              </a>
+              <a href="#" class="btn">
+                <img src="img/Vector-3.png" alt="" />
+                <span>BUY ON INSTACART</span>
+              </a>
+            </div>
+            <p class="text">
+              Agave cocktails inspired by classic mixed drinks, Mexico, and
+              living it up.
+              <span class="text__span"> ALL 8% ABV. </span>
+            </p>
+          </div>
+        </div>
+
+        <!-- header mbl -->
+        <div class="header-mbl">
           <div class="header">
-            <figure class="header__img">
+            <p class="text">Sauza agave cocktails invites you to</p>
+            <h1 class="heading mb-8">Get Busy Living</h1>
+
+            <figure class="header__img mb-5">
               <img src="img/hero.png" alt="" />
             </figure>
 
-            <div class="header__content">
-              <p class="text">Sauza agave cocktails invites you to</p>
-              <h1 class="heading mb-2">Get Busy Living</h1>
-              <div class="header__btns btns mb-2">
-                <a href="#" class="btn">
-                  <img src="img/Fill-1.png" alt="" />
-                  <span>buy on drizly</span>
-                </a>
-                <a href="#" class="btn">
-                  <img src="img/Vector-3.png" alt="" />
-                  <span>BUY ON INSTACART</span>
-                </a>
-              </div>
-              <p class="text">
-                Agave cocktails inspired by classic mixed drinks, Mexico, and
-                living it up.
-                <span class="text__span"> ALL 8% ABV. </span>
-              </p>
-            </div>
+            <a href="#" class="btn mb-2">
+              <img src="img/Fill-1.png" alt="" />
+              <span>buy on drizly</span>
+            </a>
+            <a href="#" class="btn mb-4">
+              <img src="img/Vector-3.png" alt="" />
+              <span>BUY ON INSTACART</span>
+            </a>
+
+            <img
+              src="img/border-img.png"
+              class="header__border mb-4"
+              alt="border"
+            />
+
+            <p class="text mb-4">
+              Agave cocktails inspired by classic mixed drinks, Mexico, and
+              living it up.
+              <span class="text__span"> ALL 8% ABV. </span>
+            </p>
+
+            <img src="img/border-img.png" class="header__border" alt="border" />
           </div>
         </div>
       </header>

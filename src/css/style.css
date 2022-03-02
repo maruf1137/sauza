@@ -15,6 +15,21 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56%;
+  }
+}
+@media only screen and (max-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 23.75em) {
+  html {
+    font-size: 45%;
+  }
+}
 
 body {
   font-family: "Westmount", sans-serif;
@@ -944,17 +959,26 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 8rem;
+  padding: 1.5rem 8rem;
   background-color: #f6f8f2;
   margin-top: 1.5rem;
+}
+@media only screen and (max-width: 30em) {
+  .nav__container {
+    padding: 1rem 3rem;
+  }
 }
 .nav__list {
   display: flex;
   align-items: center;
   gap: 0 5rem;
 }
+@media only screen and (max-width: 62em) {
+  .nav__list {
+    display: none;
+  }
+}
 .nav__link {
-  color: #002f6d;
   font-size: 1.7rem;
   font-weight: 700;
   line-height: 1.3rem;
@@ -977,6 +1001,123 @@ a:hover {
   height: 100%;
   width: 100%;
 }
+.nav .location-icon,
+.nav .bars-icon {
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 62em) {
+  .nav .location-icon,
+.nav .bars-icon {
+    display: block;
+  }
+}
+.nav .location-icon .icon,
+.nav .bars-icon .icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.082) 0px 3px 6px, rgba(0, 0, 0, 0.062) 0px 3px 6px;
+}
+
+.mobile-nav {
+  display: none;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #002f6d;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 62em) {
+  .mobile-nav {
+    display: block;
+  }
+}
+.mobile-nav .close-nav {
+  height: 4rem;
+  width: 4rem;
+}
+.mobile-nav .icon {
+  height: 100%;
+  width: 100%;
+  fill: #fff;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.mobile-nav .icon:hover {
+  opacity: 1;
+}
+
+.show-nav .mobile-nav {
+  transform: translateX(0);
+}
+.show-nav .mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30%;
+  align-items: center;
+  width: 100%;
+  gap: 6rem 0;
+}
+.show-nav .mobile-nav__link {
+  color: #fff;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+  opacity: 0.5;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 35.9375em) {
+  .show-nav .mobile-nav__link {
+    font-size: 3.5rem;
+  }
+}
+.show-nav .mobile-nav__link:hover {
+  opacity: 1;
+}
+.show-nav .mobile-nav .close-nav {
+  position: absolute;
+  top: 5rem;
+  right: 4rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.social {
+  position: fixed;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 35.9375em) {
+  .social {
+    display: none;
+  }
+}
+.social__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem 0;
+}
+.social .icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #002f6d;
+}
 
 .header-section {
   min-height: 100vh;
@@ -991,16 +1132,30 @@ a:hover {
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
-  gap: 4rem;
-  margin-top: 8rem;
+  margin-top: 12rem;
+}
+@media only screen and (max-width: 62em) {
+  .header {
+    display: none;
+  }
 }
 .header__img {
   width: 70rem;
   height: 70.3rem;
 }
+@media only screen and (max-width: 81.25em) {
+  .header__img {
+    width: 62rem;
+    height: 68.3rem;
+  }
+}
 .header__img img {
   height: 100%;
   width: 100%;
+}
+.header__content {
+  width: 66rem;
+  transform: translateX(-10rem);
 }
 .header__btns {
   display: flex;
@@ -1012,6 +1167,21 @@ a:hover {
   font-size: 2.8rem;
   display: block;
 }
+.header-mbl {
+  display: none;
+}
+@media only screen and (max-width: 62em) {
+  .header-mbl {
+    display: block;
+  }
+}
+.header-mbl .header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 5rem;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -1043,15 +1213,45 @@ a:hover {
   flex-direction: column;
   gap: 14.3rem 0;
 }
+@media only screen and (max-width: 62em) {
+  .product {
+    gap: 8rem 0;
+  }
+}
+@media only screen and (max-width: 62em) {
+  .product__content {
+    display: none;
+  }
+}
 .product__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 4rem;
 }
+@media only screen and (max-width: 62em) {
+  .product__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem 0;
+  }
+}
 .product__img {
   height: 90rem;
   width: 64rem;
+}
+@media only screen and (max-width: 35.9375em) {
+  .product__img {
+    height: 70rem;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 23.75em) {
+  .product__img {
+    height: 62rem;
+    width: 90%;
+  }
 }
 .product__img img {
   height: 100%;
@@ -1063,6 +1263,11 @@ a:hover {
   gap: 1.6rem;
   margin-top: 2rem;
 }
+@media only screen and (max-width: 62em) {
+  .product .btns {
+    align-items: center;
+  }
+}
 
 .living-section {
   padding: 8rem 0 22rem 0;
@@ -1072,13 +1277,17 @@ a:hover {
   background-repeat: no-repeat;
   position: relative;
 }
+@media only screen and (max-width: 62em) {
+  .living-section {
+    padding: 8rem 0 30rem 0;
+  }
+}
 
 .living-border-top,
 .living-border-bottom {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 3.5rem;
 }
 
 .living-border-top {
@@ -1107,6 +1316,11 @@ a:hover {
   margin: 0 auto;
   font-size: 1.6rem;
 }
+@media only screen and (max-width: 62em) {
+  .living .text {
+    width: 80%;
+  }
+}
 .living .text .last-line {
   display: block;
   font-size: 2rem;
@@ -1117,6 +1331,20 @@ a:hover {
   right: 5rem;
   width: 57rem;
   height: 49rem;
+}
+@media only screen and (max-width: 75em) {
+  .living__img {
+    bottom: 2rem;
+    right: 0;
+    width: 50rem;
+    height: 42rem;
+  }
+}
+@media only screen and (max-width: 62em) {
+  .living__img {
+    width: 34rem;
+    height: 30rem;
+  }
 }
 .living__img img {
   height: 100%;
