@@ -955,6 +955,12 @@ a:hover {
   background-color: #edf0e5;
   padding-top: 2rem;
   transition: all 2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  transition: all 1s;
 }
 .nav__container {
   display: flex;
@@ -1022,13 +1028,9 @@ a:hover {
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.082) 0px 3px 6px, rgba(0, 0, 0, 0.062) 0px 3px 6px;
-  transition: top 2s cubic-bezier(0.33333, 0, 0.66667, 0.33333);
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333);
 }
 
 .mobile-nav {
@@ -1408,16 +1410,13 @@ a:hover {
   width: 213px;
   height: 8.96px;
 }
-.footer__list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem 0;
-}
 .footer__link {
   font-size: 1.4rem;
   color: #edf0e5;
   opacity: 0.5;
   transition: all 0.3s;
+  margin-bottom: 0.5rem;
+  display: inline-block;
 }
 .footer__link:hover {
   opacity: 1;
