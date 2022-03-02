@@ -1,5 +1,10 @@
 .living-section {
   padding: 8rem 0 22rem 0;
+  background-image: linear-gradient(
+      rgba(237, 240, 229, 0),
+      rgba(237, 240, 229, 0)
+    ),
+    url(../img/bg-vector.png);
   @include bg-img;
   position: relative;
 

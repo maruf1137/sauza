@@ -954,6 +954,7 @@ a:hover {
 .nav {
   background-color: #edf0e5;
   padding-top: 2rem;
+  transition: all 2s;
 }
 .nav__container {
   display: flex;
@@ -1027,6 +1028,7 @@ a:hover {
   width: 100%;
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.082) 0px 3px 6px, rgba(0, 0, 0, 0.062) 0px 3px 6px;
+  transition: top 2s cubic-bezier(0.33333, 0, 0.66667, 0.33333);
 }
 
 .mobile-nav {
@@ -1126,7 +1128,7 @@ a:hover {
 .header-section {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(237, 240, 229, 0), rgba(237, 240, 229, 0.151)), url(../img/Vector-2.png);
+  background-image: linear-gradient(rgba(237, 240, 229, 0.096), rgba(237, 240, 229, 0.171)), url(../img/hero-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1136,7 +1138,7 @@ a:hover {
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
-  margin-top: 12rem;
+  padding-top: 12rem;
 }
 @media only screen and (max-width: 62em) {
   .header {
@@ -1146,6 +1148,7 @@ a:hover {
 .header__img {
   width: 70rem;
   height: 70.3rem;
+  transform: translateX(-2rem);
 }
 @media only screen and (max-width: 81.25em) {
   .header__img {
@@ -1275,7 +1278,7 @@ a:hover {
 
 .living-section {
   padding: 8rem 0 22rem 0;
-  background-image: linear-gradient(rgba(237, 240, 229, 0), rgba(237, 240, 229, 0.151)), url(../img/Vector-2.png);
+  background-image: linear-gradient(rgba(237, 240, 229, 0), rgba(237, 240, 229, 0)), url(../img/bg-vector.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

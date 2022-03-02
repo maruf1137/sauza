@@ -1,6 +1,11 @@
 .header-section {
   min-height: 100vh;
   width: 100%;
+  background-image: linear-gradient(
+      rgba(237, 240, 229, 0.096),
+      rgba(237, 240, 229, 0.171)
+    ),
+    url(../img/hero-bg.png);
   @include bg-img;
 }
 
@@ -8,7 +13,7 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
-  margin-top: 12rem;
+  padding-top: 12rem;
 
   @media only screen and (max-width: $tab-land) {
     display: none;
@@ -17,6 +22,7 @@
   &__img {
     width: 70rem;
     height: 70.3rem;
+    transform: translateX(-2rem);
 
     @media only screen and (max-width: 81.25em) {
       width: 62rem;
