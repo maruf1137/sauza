@@ -1030,6 +1030,7 @@ a:hover {
   width: 100%;
   background-color: #002f6d;
   transition: all 0.5s;
+  z-index: 3;
 }
 @media only screen and (max-width: 62em) {
   .mobile-nav {
@@ -1061,7 +1062,7 @@ a:hover {
   padding-top: 30%;
   align-items: center;
   width: 100%;
-  gap: 6rem 0;
+  gap: 4rem 0;
 }
 .show-nav .mobile-nav__link {
   color: #fff;
@@ -1121,13 +1122,13 @@ a:hover {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding-top: 5.7rem;
 }
 
 .header {
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
-  padding-top: 12rem;
 }
 @media only screen and (max-width: 62em) {
   .header {

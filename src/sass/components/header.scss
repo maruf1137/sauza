@@ -7,13 +7,13 @@
     ),
     url(../img/hero-bg.png);
   @include bg-img;
+  padding-top: 5.7rem;
 }
 
 .header {
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
-  padding-top: 12rem;
 
   @media only screen and (max-width: $tab-land) {
     display: none;

@@ -1,5 +1,5 @@
 // create products
-const product_1 = "img/product-img-4.png";
+// const product_1 = "img/product-img-4.png";
 
 const product = [
   {

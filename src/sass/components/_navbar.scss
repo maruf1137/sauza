@@ -76,6 +76,7 @@
   width: 100%;
   background-color: $color-primary;
   transition: all 0.5s;
+  z-index: 3;
 
   @media only screen and (max-width: $tab-land) {
     display: block;
@@ -109,7 +110,7 @@
       padding-top: 30%;
       align-items: center;
       width: 100%;
-      gap: 6rem 0;
+      gap: 4rem 0;
     }
 
     &__link {
