@@ -1191,14 +1191,25 @@ a:hover {
   height: 6.3rem;
   width: 32rem;
   color: #002f6d;
-}
-.btn img {
-  height: 4.9rem;
+  transition: all 0.3s;
 }
 .btn span {
   font-size: 2.2rem;
   color: #002f6d;
   font-weight: 900;
+  transition: all 0.3s;
+}
+.btn svg path {
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #002f6d;
+}
+.btn:hover span {
+  color: #fff;
+}
+.btn:hover svg path {
+  fill: #fff;
 }
 
 .product-section {
